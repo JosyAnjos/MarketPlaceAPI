@@ -6,8 +6,9 @@ Rails.application.routes.draw do
   end
   namespace :api, defaults: { format: :json} do
     namespace :v1 do
-      resources :tokens, only: [:create]
-      resources :users, only: %i[create show update destroy]
+      resources :products, only: %i[create destroy index show update]
+      resources :tokens, only: %i[create]
+      resources :users, only: %i[create destroy show update]
     end
   end
 end

@@ -5,6 +5,7 @@ ruby '2.6.3'
 
 gem "bcrypt", "~> 3.1"
 gem 'bootsnap', '>= 1.1.0', require: false
+gem "jwt", "~> 2.2"
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 6.0.0.beta1'

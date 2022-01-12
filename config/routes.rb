@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json} do
     namespace :v1 do
       resources :products, only: %i[create destroy index show update]
+      resources :orders, only: %i[create index show]
       resources :tokens, only: %i[create]
       resources :users, only: %i[create destroy show update]
     end
